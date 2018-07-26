@@ -1,0 +1,297 @@
+html{
+    height: 100%;
+}
+*{
+    text-align:center;
+}
+
+body {
+    background: url('../images/blackspace.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    text-align: center;
+}
+img.align-center{
+    display: block;
+    margin: 0px auto;
+
+}
+#nav{
+    margin: 1%;
+    
+    margin-top: 0px;
+    padding: 10px 0px 5px 0px;
+}
+a{
+    
+    text-decoration:none;
+    font-size: 25px;
+    color:#ff27b4;
+   
+}
+
+li{
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    padding: 75px;
+}
+
+
+
+
+
+/* 
+  MIXIN(S)
+  =================
+ /chriscoyier/pen/FwJux
+
+
+  (TEXT) PARAMS
+  =================
+  1. Namespace
+  2. Intensity
+  3. Text color
+  4. Background color (flat)
+  5. Highlight #1 color
+  6. Highlight #2 color
+  7. Width (px)
+  8. Height (px)
+*/
+.example-one {
+    font-size: 25px;
+    color: #ff27b4;
+    position: relative;
+  }
+  @keyframes example-one-anim-1 {
+    0% {
+      clip: rect(87px, 450px, 97px, 0);
+    }
+    5.88235% {
+      clip: rect(76px, 450px, 102px, 0);
+    }
+    11.76471% {
+      clip: rect(49px, 450px, 49px, 0);
+    }
+    17.64706% {
+      clip: rect(12px, 450px, 115px, 0);
+    }
+    23.52941% {
+      clip: rect(74px, 450px, 33px, 0);
+    }
+    29.41176% {
+      clip: rect(88px, 450px, 94px, 0);
+    }
+    35.29412% {
+      clip: rect(85px, 450px, 98px, 0);
+    }
+    41.17647% {
+      clip: rect(51px, 450px, 63px, 0);
+    }
+    47.05882% {
+      clip: rect(112px, 450px, 44px, 0);
+    }
+    52.94118% {
+      clip: rect(108px, 450px, 87px, 0);
+    }
+    58.82353% {
+      clip: rect(50px, 450px, 88px, 0);
+    }
+    64.70588% {
+      clip: rect(22px, 450px, 13px, 0);
+    }
+    70.58824% {
+      clip: rect(46px, 450px, 81px, 0);
+    }
+    76.47059% {
+      clip: rect(36px, 450px, 45px, 0);
+    }
+    82.35294% {
+      clip: rect(82px, 450px, 41px, 0);
+    }
+    88.23529% {
+      clip: rect(36px, 450px, 112px, 0);
+    }
+    94.11765% {
+      clip: rect(82px, 450px, 102px, 0);
+    }
+    100% {
+      clip: rect(50px, 450px, 55px, 0);
+    }
+  }
+  @keyframes example-one-anim-2 {
+    0% {
+      clip: rect(45px, 450px, 111px, 0);
+    }
+    5.88235% {
+      clip: rect(22px, 450px, 50px, 0);
+    }
+    11.76471% {
+      clip: rect(60px, 450px, 5px, 0);
+    }
+    17.64706% {
+      clip: rect(22px, 450px, 7px, 0);
+    }
+    23.52941% {
+      clip: rect(25px, 450px, 2px, 0);
+    }
+    29.41176% {
+      clip: rect(12px, 450px, 66px, 0);
+    }
+    35.29412% {
+      clip: rect(51px, 450px, 113px, 0);
+    }
+    41.17647% {
+      clip: rect(62px, 450px, 108px, 0);
+    }
+    47.05882% {
+      clip: rect(39px, 450px, 89px, 0);
+    }
+    52.94118% {
+      clip: rect(28px, 450px, 94px, 0);
+    }
+    58.82353% {
+      clip: rect(16px, 450px, 81px, 0);
+    }
+    64.70588% {
+      clip: rect(24px, 450px, 105px, 0);
+    }
+    70.58824% {
+      clip: rect(51px, 450px, 2px, 0);
+    }
+    76.47059% {
+      clip: rect(83px, 450px, 101px, 0);
+    }
+    82.35294% {
+      clip: rect(13px, 450px, 63px, 0);
+    }
+    88.23529% {
+      clip: rect(24px, 450px, 99px, 0);
+    }
+    94.11765% {
+      clip: rect(94px, 450px, 107px, 0);
+    }
+    100% {
+      clip: rect(67px, 450px, 40px, 0);
+    }
+  }
+  .example-one:before, .example-one:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    opacity: 1;
+    clip: rect(0, 0, 0, 0);
+  }
+  .example-one:after {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation: example-one-anim-1 2s infinite linear alternate-reverse;
+  }
+  .example-one:before {
+    left: -2px;
+    text-shadow: 2px 0 blue;
+    animation: example-one-anim-2 3s infinite linear alternate-reverse;
+  }
+  
+ 
+  @keyframes example-two-anim-1 {
+    0% {
+      clip: rect(23px, 714px, 38px, 0);
+    }
+    10% {
+      clip: rect(7px, 714px, 14px, 0);
+    }
+    20% {
+      clip: rect(25px, 714px, 4px, 0);
+    }
+    30% {
+      clip: rect(25px, 714px, 22px, 0);
+    }
+    40% {
+      clip: rect(9px, 714px, 46px, 0);
+    }
+    50% {
+      clip: rect(12px, 714px, 2px, 0);
+    }
+    60% {
+      clip: rect(37px, 714px, 15px, 0);
+    }
+    70% {
+      clip: rect(10px, 714px, 30px, 0);
+    }
+    80% {
+      clip: rect(49px, 714px, 34px, 0);
+    }
+    90% {
+      clip: rect(16px, 714px, 7px, 0);
+    }
+    100% {
+      clip: rect(37px, 714px, 10px, 0);
+    }
+  }
+  @keyframes example-two-anim-2 {
+    0% {
+      clip: rect(50px, 714px, 17px, 0);
+    }
+    10% {
+      clip: rect(16px, 714px, 50px, 0);
+    }
+    20% {
+      clip: rect(2px, 714px, 14px, 0);
+    }
+    30% {
+      clip: rect(24px, 714px, 14px, 0);
+    }
+    40% {
+      clip: rect(23px, 714px, 41px, 0);
+    }
+    50% {
+      clip: rect(38px, 714px, 3px, 0);
+    }
+    60% {
+      clip: rect(3px, 714px, 15px, 0);
+    }
+    70% {
+      clip: rect(22px, 714px, 36px, 0);
+    }
+    80% {
+      clip: rect(45px, 714px, 10px, 0);
+    }
+    90% {
+      clip: rect(48px, 714px, 35px, 0);
+    }
+    100% {
+      clip: rect(48px, 714px, 34px, 0);
+    }
+  }
+  .example-two:before, .example-two:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    clip: rect(0, 0, 0, 0);
+  }
+  .example-two:after {
+    left: 2px;
+    text-shadow: -1px 0 white;
+    animation: example-two-anim-1 2s infinite linear alternate-reverse;
+  }
+  .example-two:before {
+    left: -2px;
+    text-shadow: 2px 0 green;
+    animation: example-two-anim-2 3s infinite linear alternate-reverse;
+  }
+  
+ 
